@@ -1,0 +1,42 @@
+.section-main {
+    align-items: center;
+    background: url("../assets/backgrounds/bg1.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.section-main__label {
+    color: #282828;
+    font-size: 60px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.section-main__play {
+    opacity: 0.6;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+
+.section-main__label2 {
+    color: #282828;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 32px;
+    opacity: 0.7;
+    position: relative;
+}
+
+@media only screen and (max-width: 576px) {
+    .section-main__label {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+}

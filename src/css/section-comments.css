@@ -1,0 +1,112 @@
+.section-comments {
+    min-height: 670px;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.section-comments:before {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    background-image: url("../assets/backgrounds/bg3.png");
+}
+
+.section-comments__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 9%;
+    margin-top: 100px;
+}
+
+
+.section-comments__comment {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 25px;
+}
+
+
+.section-comments__avatar {
+    width: 75px;
+    height: 75px;
+    background-color: #4e4e5e;
+    margin-bottom: 25px;
+    border: 2px solid #1d1e24;
+}
+
+.section-comments__title {
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.section-comments__job {
+    color: #ff6d6d;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.section-comments__com {
+    opacity: 0.6;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.section-comments__partners {
+    margin-top: 80px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 0 9%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .section-comments__partners {
+        margin-bottom: 40px;
+    }
+    .section-comments__container {
+        flex-wrap: wrap;
+    }
+    .section-comments__comment {
+        min-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .section-comments__container {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .section-comments__comment {
+        margin-bottom: 30px;
+    }
+
+    .section-comments__partners {
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .section-comments__partners img {
+        margin: 20px;
+    }
+
+    .section-comments {
+        min-height: auto;
+    }
+}
